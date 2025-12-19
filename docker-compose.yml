@@ -9,6 +9,5 @@ services:
       - "80:80"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - /etc/nginx/conf.d/:/dev/null # off conf
     depends_on:
       - backend
